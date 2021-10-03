@@ -2,12 +2,12 @@ fun main(args: Array<String>) {
     // questions -- array
     // answers -- array
     val question = arrayOf(
-        "True or False: The Session Layer maintains connections, controlling ports, and sessions.\n",
-        "True or False: An device that manages the IP address of a device operates at the Network Layer of the OSI Networking model\n",
+        "True or False: In the OSI model the Session Layer maintains connections, controlling ports, and sessions.\n",
+        "True or False: A device that can read the IP address of another device operates at the Network Layer of the OSI  model\n",
         "True or False: Switches typically operate at the Data Link Layer or Network Layer of the OSI model\n",
-        "True or False: Antivirus Software is usually run at Session layer of the OSI model\n",
+        "True or False: A firewall is usually run at the Session layer of the OSI model\n",
         "True or False: Your browser operates at the Application Layer of the OSI model\n")
-    val answers = arrayOf("True","True","True","False","True")
+    val answers = arrayOf("True","True","True","True","True")
     var questionsAnswers = arrayOf<Array<String>>()
     questionsAnswers += question
     questionsAnswers += answers
