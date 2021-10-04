@@ -12,18 +12,29 @@ fun main(args: Array<String>) {
     questionsAnswers += question
     questionsAnswers += answers
     // user answers -- array
-    // user score -- double
+    // user score -- Int
     var userAnswers = arrayOfNulls<String>(question.size)
     var userScore = 0
+    // get number of questions from question array
     val numberOfQuestions = questionsAnswers[0].size -1
+    // ask each question,
+    // give user a point if the answer matches
+    // tell user if answer was right or wrong
     for (i in 0..numberOfQuestions) {
         print(questionsAnswers[0][i])
         userAnswers[i] = readLine().toString()
         if (userAnswers[i]?.contains(questionsAnswers[1][i], true) == true){
+            println("that's right!")
             userScore += 1
+        } else {
+            println("sorry, the correct answer was ${questionsAnswers[1][i]}")
         }
     }
     println("Testing is done. your score is ${userScore}/5")
+}
+
+fun askQuestions(){
+
 }
 // ask questions
 
